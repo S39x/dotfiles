@@ -19,7 +19,6 @@ Plugin 'itchyny/lightline.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-set number
 Plugin 'vim-scripts/indentpython.vim'
 " Plugin 'Valloric/YouCompleteMe'
 let python_highlight_all=1
@@ -29,4 +28,5 @@ Plugin 'morhetz/gruvbox'
 Plugin 'davidhalter/jedi-vim'
 colorscheme gruvbox
 set number
+syntax on
 set backspace=indent,eol,start
