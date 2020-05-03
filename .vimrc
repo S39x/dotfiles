@@ -6,27 +6,24 @@ call vundle#begin()
 
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
-" ...
+Plugin 'davidhalter/jedi-vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'itchyny/lightline.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-Plugin 'vim-scripts/indentpython.vim'
-" Plugin 'Valloric/YouCompleteMe'
 let python_highlight_all=1
-syntax on
-Plugin 'scrooloose/nerdtree'
-Plugin 'morhetz/gruvbox'
-Plugin 'davidhalter/jedi-vim'
 colorscheme gruvbox
 set number
 syntax on
 set backspace=indent,eol,start
+set laststatus=2
+set background=dark
